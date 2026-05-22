@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(170, 169, 167);
+            margin: 0px;
+        }
+        
+        header{
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+        h1{
+            background-color: rgb(146, 142, 142);
+            color: aliceblue;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+            border-radius: 5px;
+        }
+       
+        nav{
+            background-color: rgb(102,102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgb(122, 121, 121);
+            border-radius: 5px 9px;
+        }
+        
+        nav>a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-left: 
+            50px;
+            
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+            color: blue;
+
+        }
+
+        main{
+            background-color: rgb(247, 246, 243);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #assuntos>a{
+            text-decoration: none;
+            color: rgb(2, 2, 2);
+            font-weight: bold;
+            margin-left: 
+            50px;
+        }
+         #assuntos>a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        article{
+            background-color: rgb(212, 212, 211);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        article>aside{
+            background-color: rgb(157, 156, 156);
+        }
+        footer{
+            background-color: rgb(29, 29, 29);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Espote</a>
+            <a href="#">Lazer</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Entreterimento</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam, quasi eius eum delectus odit aliquid, praesentium esse explicabo, a iste fugit quia ab recusandae odio quam non perspiciatis eveniet.</p>
+                <aside>
+                    <p>Escrito por Leandro-Lopes</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por LEANDRO LOPES - 2026&copy</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url('../fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'La Monarchie';
+  src: url('../../fonts/La Monarchie de Saint Ombre.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  
+}
+
+
+/* 👇 AGORA SIM você usa a fonte */
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+}
+h2 {
+  font-family: 'La Monarchie', serif;
+  font-size: 3em;
+ 
+}
