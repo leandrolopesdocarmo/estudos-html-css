@@ -1,0 +1,41 @@
+body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            background-color: rgba(58, 58, 58, 0.129);
+            text-align: center;
+        }
+        table{
+            width: 450px;
+            position: relative;
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: #bdbdbd;
+        }
+
+        /* Cabeçalho sticky */
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #bdbdbd ;
+        }
+            /* even--> par e odd -->impar para efeito zebrado */
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
