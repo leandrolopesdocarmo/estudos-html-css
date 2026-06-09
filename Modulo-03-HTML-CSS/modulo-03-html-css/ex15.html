@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configuração de caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente em celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
+    <title>Tabela responsiva</title>
+
+    <style>
+        /* Define a fonte do site */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Remove espaços entre as bordas da tabela */
+        table{
+            border-collapse: collapse;
+        }
+
+        /* Estilização das células e cabeçalhos */
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Estilo do título da tabela */
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        /* Cria efeito zebrado nas linhas pares */
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        /* Permite rolagem horizontal em telas pequenas */
+        div#container{
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Tabelas em telas pequenas</h1>
+
+    <!-- Parágrafo explicando responsividade -->
+    <p>
+        Em telas pequenas, como celulares, as tabelas podem ficar difíceis de visualizar porque possuem muitas colunas e pouco espaço disponível. Para melhorar a responsividade, uma técnica comum é permitir a rolagem horizontal da tabela, especialmente quando há informações organizadas por meses do ano, como janeiro, fevereiro, março e assim por diante. Dessa forma, o usuário consegue visualizar os dados sem quebrar o layout da página, mantendo a organização das informações mesmo em dispositivos menores.
+    </p>
+
+    <!-- Container usado para permitir rolagem horizontal -->
+    <div id="container">
+
+        <!-- Início da tabela -->
+        <table>
+
+            <!-- Título da tabela -->
+            <caption>Tabelas responsivas</caption>
+
+            <!-- Cabeçalho da tabela -->
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+
+            <!-- Corpo da tabela -->
+            <tbody>
+
+                <!-- Linha de dados do produto -->
+                <tr>
+                    <td>Tv 47"</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>95</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>Ipad Max</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>PlayStation 4</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>Lava-Louças</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+                <!-- Linha de dados -->
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

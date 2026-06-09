@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div:hover{
+            color: rgb(33, 1, 243);
+        }
+        div>p{
+            display: none;
+        }
+        /* Usar esse hover em menu para quee aparea sua escolha */
+        div:hover>p{
+            display: block;
+            color: antiquewhite;
+            background-color: blueviolet;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+    <p>Texto Escondido</p>
+</div>
+</body>
+</html>

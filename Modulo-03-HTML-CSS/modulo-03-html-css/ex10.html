@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        table{
+            width: 350px;
+            height: 350px;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;/*Alinhamento horinzontal*/
+            vertical-align: middle;/*Alinhamento vertical*/
+        }
+        /* criando uma class para mover o numero para esqueda parecido com excel */
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!-- 
+    Hierarquia de tabelas(simples)
+    table -> Tabela
+        table rowa -> linha de tabela
+            table header -> cabeçalho da tabela
+            table data -> dados de tabela
+    -->
+    <table>
+        <!--primeira linha-->
+        <tr> 
+            <td class="numero">A1</td>
+            <td class="numero">B1</td>
+            <td class="numero">C1</td>
+        </tr>
+        <!--Segunda linha-->
+        <tr>   
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <!--Terceira linha-->
+        <tr>    
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <!--Quarta linha-->
+        <tr>
+        <td>A4</td>
+        <td>B4</td>
+        <td>C4</td>
+        </tr>
+            
+        
+    </table>
+</body>
+</html>

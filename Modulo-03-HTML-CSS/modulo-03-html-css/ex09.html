@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        table{
+            width: 350px;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 6px;
+            
+        }
+        .violeta{
+            background-color: blueviolet;
+        }
+        .azul{
+            background-color: blue;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!-- 
+    Hierarquia de tabelas(simples)
+    table -> Tabela
+        table rowa -> linha de tabela
+            table header -> cabeçalho da tabela
+            table data -> dados de tabela
+    -->
+    <table>
+        <!--primeira linha-->
+        <tr> 
+            <td class="violeta">A1</td>
+            <td class="azul">B1</td>
+            <td class="amarelo">C1</td>
+        </tr>
+        <!--Segunda linha-->
+        <tr>   
+            <td class="violeta">A2</td>
+            <td class="azul">B2</td>
+            <td class="amarelo">C2</td>
+        </tr>
+        <!--Terceira linha-->
+        <tr>    
+            <td class="violeta">A3</td>
+            <td class="azul">B3</td>
+            <td class="amarelo">C3</td>
+        </tr>
+        <!--Quarta linha-->
+        <tr>
+        <td class="violeta">A4</td>
+        <td class="azul">B4</td>
+        <td class="amarelo">C4</td>
+        </tr>
+            
+        
+    </table>
+</body>
+</html>
