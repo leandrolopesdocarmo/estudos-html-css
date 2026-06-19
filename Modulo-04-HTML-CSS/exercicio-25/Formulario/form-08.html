@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Exemplo de formulário</h1>
+
+    <!-- Formulário que envia os dados para cadastro.php usando POST -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <!-- Campo para o primeiro número -->
+        <p>
+            <label for="in1">Número 1:</label>
+
+            <!--
+                min="0" e max="50" limitam os valores.
+                required torna o preenchimento obrigatório.
+                oninput atualiza a soma automaticamente.
+            -->
+            <input
+                type="number"
+                name="n1"
+                id="in1"
+                min="0"
+                max="50"
+                required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <!-- Campo para o segundo número -->
+        <p>
+            <label for="in2">Número 2:</label>
+
+            <!--
+                Sempre que o usuário digitar,
+                a soma será recalculada.
+            -->
+            <input
+                type="number"
+                name="n2"
+                id="in2"
+                min="0"
+                max="50"
+                required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <!-- Exibe o resultado da soma -->
+        <p>
+            <label for="isoma">Soma:</label>
+
+            <!--
+                A tag output mostra o resultado
+                calculado pelos campos acima.
+            -->
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <!-- Botões do formulário -->
+        <p>
+
+            <!-- Envia os dados -->
+            <input type="submit" value="Enviar">
+
+            <!-- Limpa todos os campos -->
+            <input type="reset" value="Limpar">
+
+        </p>
+
+    </form>
+
+</body>
+</html>
