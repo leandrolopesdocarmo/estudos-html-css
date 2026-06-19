@@ -1,33 +1,81 @@
+<!-- O que esse exemplo ensina:
+
+Uso de <output> para mostrar resultados.
+Uso de oninput para atualizar dados em tempo real.
+Uso de new Date().getFullYear() para obter o ano atual.
+Conversão para número com Number().
+Criação e chamada de funções JavaScript dentro do HTML. -->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Formulário que envia os dados para cadastro.php -->
     <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
+            <!-- Campo para informar o ano de nascimento -->
             <label for="iano">Em que ano você nasceu</label>
-            <input type="number" name="ano" id="iano" min="1943" max="2026" required oninput="calcidade()">
+
+            <!--
+                Campo numérico:
+                min = menor ano permitido
+                max = maior ano permitido
+                required = preenchimento obrigatório
+
+                oninput chama a função calcidade()
+                sempre que o valor for alterado.
+            -->
+            <input
+                type="number"
+                name="ano"
+                id="iano"
+                min="1943"
+                max="2026"
+                required
+                oninput="calcidade()">
         </p>
 
         <p>
+            <!-- Exibe a idade calculada -->
             <label for="iidade">Sua idade é:</label>
+
+            <!-- Resultado da operação -->
             <output id="iidade">0</output>
         </p>
 
         <p>
+            <!-- Envia os dados do formulário -->
             <input type="submit" value="Enviar">
+
+            <!-- Limpa os campos do formulário -->
             <input type="reset" value="Limpar">
         </p>
+
     </form>
+
     <script>
+
+        // Função responsável por calcular a idade
         function calcidade(){
+
+            // Obtém o ano atual do sistema
             let atual = new Date().getFullYear()
+
+            // Calcula a idade e exibe no output
             iidade.innerHTML = Number(atual) - Number(iano.value)
         }
+
     </script>
+
 </body>
 </html>

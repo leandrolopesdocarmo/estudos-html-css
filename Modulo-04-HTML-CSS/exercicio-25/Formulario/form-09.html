@@ -1,23 +1,62 @@
+<!--Resumo do funcionamento:
+
+O <input type="range"> cria uma barra deslizante.
+O valor pode variar de 0 a 10.
+O valor inicial é 5.
+O evento oninput atualiza o conteúdo do <output> em tempo real conforme o usuário move o controle.
+O <output> serve para mostrar o valor selecionado na barra.  -->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Formulários</title>
 </head>
 <body>
+
+    <!-- Formulário que envia os dados para cadastro.php -->
     <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
+            <!-- Texto associado ao campo range -->
             <label for="inum">Número:</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+
+            <!--
+                Campo deslizante (slider)
+                min = valor mínimo
+                max = valor máximo
+                value = valor inicial
+
+                oninput executa o código sempre que o usuário
+                move o controle deslizante.
+            -->
+            <input
+                type="range"
+                name="num"
+                id="inum"
+                min="0"
+                max="10"
+                value="5"
+                oninput="ival.innerHTML = Number(inum.value)">
+
+            <!-- Exibe o valor atual do slider -->
             <output id="ival">5</output>
         </p>
 
         <p>
+            <!-- Envia os dados do formulário -->
             <input type="submit" value="Enviar">
+
+            <!-- Limpa os campos do formulário -->
             <input type="reset" value="Limpar">
         </p>
+
     </form>
+
 </body>
 </html>
