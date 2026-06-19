@@ -6,10 +6,29 @@
     <title>Formulários</title>
 </head>
 <body>
-    <h1>Tipo de formulário</h1>
-    <form action="cadastro.js">
+    <h1>Tipos Seletores</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
         
+                <!-- Seletor de cores -->
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <!-- Seletor de nivel(range) -->
+        <p>
+          <label for="inivel">Nível de satisfação</label>
+          <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+        </p>
+        <!-- Seletor de imagem(file) -->
+        <p>
+            <label for="ifot">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
 
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>

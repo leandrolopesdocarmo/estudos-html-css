@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Exemplo de formulário</h1>
+
+    <!-- Formulário -->
+    <form action="/cadastro" method="post" autocomplete="on">
+
+        <!-- Campo para seleção de estado -->
+        <p>
+            <label for="iest">Estado</label>
+
+            <!-- Lista suspensa -->
+            <select name="estado" id="iest">
+
+                <!-- Opção padrão -->
+                <option value="" selected>---Escolha---</option>
+
+                <!-- Grupo de estados da Região Sudeste -->
+                <optgroup label="Região sudeste">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                </optgroup>
+
+                <!-- Grupo de estados da Região Nordeste -->
+                <optgroup label="Região nordeste">
+                    <option value="ma">Maranhão</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <!-- Campo de profissão com sugestões -->
+        <p>
+            <label for="iprof">Profissão</label>
+
+            <!-- Input ligado ao datalist -->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <!-- Lista de sugestões -->
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <!-- Campo para mensagem longa -->
+        <p>
+            <label for="imsg">Mensagem</label><br>
+
+            <!-- Área de texto com 35 colunas e 15 linhas -->
+            <textarea
+                name="msg"
+                id="imsg"
+                cols="35"
+                rows="15">
+            </textarea>
+        </p>
+
+        <!-- Botões do formulário -->
+        <p>
+
+            <!-- Envia os dados -->
+            <input type="submit" value="Enviar">
+
+            <!-- Limpa os campos -->
+            <input type="reset" value="Limpar">
+
+        </p>
+
+    </form>
+
+</body>
+</html>
