@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Todas as demais media */
+
+/* Pontos de interrupção CSS padronizados
+---------------------------------------------------------------
+Móvel (Pequeno): 320px para480px
+Celular (Grande) / Tablet Pequeno: 481px para767px
+Tablet: 768px para1024px
+Laptop / Desktop pequeno: 1025px para1200px
+Computadores de mesa grandes: 1201px e maiores
+---------------------------------------------------------------
+Configurações padrão do framework (ex: Bootstrap)
+---------------------------------------------------------------
+Muitos frameworks de front-end utilizam classes numéricas estabelecidas e previsíveis:
+sm (Pequeno): 576px e acima
+md (Médio): 768px e acima
+Grande (g): 992px e acima
+XL (Extra Grande): 1200px e tamanhos maiores
+XXL (Extra Extra Grande): 1400px e tamanhos maiores */
+
+/* Typical Device Breakpoints (Obs: os dados abaixo são de 2020)
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: de 992px até 1200px
+telas maiores: Acima de 1200px 
+ */
