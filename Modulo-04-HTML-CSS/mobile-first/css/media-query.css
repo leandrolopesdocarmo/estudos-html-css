@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* Todas as demais media */
-
 /* Pontos de interrupção CSS padronizados
 ---------------------------------------------------------------
 Móvel (Pequeno): 320px para480px
@@ -26,3 +24,46 @@ Tablet: 768px até 992px
 Desktop: de 992px até 1200px
 telas maiores: Acima de 1200px 
  */
+
+
+/* Todas as demais media */
+
+
+/*Impressão/impressora */
+@media print{
+    body{}
+}
+  
+ /* Tablet */
+@media screen and (min-width:768px) and (max-width:992px) {
+   body{
+    background-image: url(../imagem/back-tablet.jpg);
+   }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+/*Desktop */
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-image: url(../imagem/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+/* telas Maiores */
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagem/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
