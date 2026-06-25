@@ -31,7 +31,34 @@ telas maiores: Acima de 1200px
 
 /*Impressão/impressora */
 @media print{
-    body{}
+    *{
+         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-image: url(../imagem/back-print.jpg); /* Desnecessario */
+         
+    }
+    main{ 
+        width: 100%;
+        border: 2px solid black;
+        }
+    main::after{
+            content: 'Aula do curso em video sobre media-queries';
+            text-decoration: overline;
+        }
+    main h1{
+         text-shadow: none;
+         color: black;
+    }
+
+   
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
   
  /* Tablet */
@@ -46,7 +73,7 @@ telas maiores: Acima de 1200px
     img#tv{display: none;}
 }
 /*Desktop */
-@media screen and (min-width:992px) and (max-width:1200px) {
+@media screen and (min-width:992px) and (max-width:1199px) {
     body{
         background-image: url(../imagem/back-pc.jpg);
     }
